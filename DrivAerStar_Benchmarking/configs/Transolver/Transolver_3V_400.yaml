@@ -1,0 +1,44 @@
+Seed: 42
+Data:
+  args:
+    batch_size: 4
+    data_dirs : 
+      - "/path/to/dataset/DrivAerStar/vtk_E/"
+      - "/path/to/dataset/DrivAerStar/vtk_F/"
+      - "/path/to/dataset/DrivAerStar/vtk_N/"
+    data_cache_file: "./dataset/DrivAerStar_3Vehicles.pt"
+    val_batch_size:  1
+    num_train: 400
+    num_val: 150
+    num_test: 150
+    no_cache: False 
+  type: DrivAerStar_3Vehicles
+Trainer:
+  args:
+    accelerator: gpu
+    devices: 1
+    max_epochs: 500
+load_ckpt: null
+
+
+network:
+  args:
+    lr: 0.001
+    space_dim: 7
+    out_dim: 4
+    epochs: 500
+    weight_decay: 0.0001
+    n_hidden: 64
+    n_layers: 4
+    n_heads: 4
+    max_grad_norm: 0.1
+    downsample: 5
+    mlp_ratio: 1
+    dropout: 0.0
+    ntrain: 50
+    unified_pos: 0
+    ref: 8
+    slice_num: 16
+    eval: 0
+  type: Transolver_Irregular_Mesh
+

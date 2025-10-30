@@ -1,0 +1,31 @@
+Seed: 42
+Data:
+  args:
+    batch_size: 4
+    data_dirs : 
+      - "/path/to/dataset/DrivAerStar/vtk_E/"
+      - "/path/to/dataset/DrivAerStar/vtk_F/"
+      - "/path/to/dataset/DrivAerStar/vtk_N/"
+    val_batch_size:  1
+    num_train: 1200
+    num_val: 150
+    num_test: 150
+    no_cache: False 
+    data_cache_file: "./dataset/DrivAerStar_3Vehicles.pt"
+  type: DrivAerStar_3Vehicles
+Trainer:
+  args:
+    accelerator: gpu
+    devices: 1
+    max_epochs: 500
+load_ckpt: null
+
+
+network:
+  args:
+    lr: 0.001
+    ntrain: 50
+    epochs: 500
+    max_grad_norm: 0.1
+    weight_decay: 0.0001
+  type: pointnet

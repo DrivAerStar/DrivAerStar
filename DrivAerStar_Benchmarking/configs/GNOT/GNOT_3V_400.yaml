@@ -1,0 +1,50 @@
+Seed: 42
+Data:
+  args:
+    batch_size: 4
+    data_dirs : 
+      - "/path/to/dataset/DrivAerStar/vtk_E/"
+      - "/path/to/dataset/DrivAerStar/vtk_F/"
+      - "/path/to/dataset/DrivAerStar/vtk_N/"
+    data_cache_file: "./dataset/DrivAerStar_3Vehicles.pt"
+    val_batch_size:  1
+    num_train: 400
+    num_val: 150
+    num_test: 150
+    no_cache: False 
+  type: DrivAerStar_3Vehicles
+Trainer:
+  args:
+    accelerator: gpu
+    devices: 1
+    max_epochs: 500
+load_ckpt: null
+
+
+network:
+  args:
+    model:
+      trunk_size : 3      # not default
+      branch_sizes : []   # no bc for car
+      space_dim : 2
+      output_size : 4
+      n_layers : 3        # not default
+      # n_hidden : 128      # not default
+      n_hidden : 8        # small for less gpu memory
+      n_head : 1
+      n_experts : 1
+      n_inner : 4
+      mlp_layers : 3
+      attn_type : linear
+      act : gelu
+      ffn_dropout : 0.0
+      attn_dropout : 0.0
+      horiz_fourier_dim : 0
+    hyperparameter:
+      lr: 0.001
+      ntrain: 50
+      epochs: 500
+      max_grad_norm: 0.1
+      weight_decay: 0.0001
+  type: CGPT
+
