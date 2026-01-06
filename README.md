@@ -1,5 +1,10 @@
 # DrivAerStar
 
+[Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UXVXQV)
+
+[Hugging Face](https://huggingface.co/datasets/drivaerstar/DrivAerStar-Review)
+
+
 This repository contains two complementary sub-projects:
 
 - **Production (DrivAerStar_Maker)**: Tools and scripts for generating, processing, and exporting DrivAer models (case/VTK, etc.).
@@ -180,4 +185,5 @@ network:
     eval: 0
   type: Transolver_Irregular_Mesh
 ```
+
 
