@@ -2,7 +2,9 @@
 
 [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UXVXQV)
 
-[Hugging Face](https://huggingface.co/datasets/drivaerstar/DrivAerStar-Review)
+[Hugging Face(Partial Data)](https://huggingface.co/datasets/drivaerstar/DrivAerStar-Review)
+
+[ModelScope(Uploading)](https://www.modelscope.cn/datasets/kenalin/DrivAerPlusPlus)
 
 
 This repository contains two complementary sub-projects:
@@ -185,5 +187,6 @@ network:
     eval: 0
   type: Transolver_Irregular_Mesh
 ```
+
 
 
