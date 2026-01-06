@@ -24,12 +24,10 @@ Cite:
 }
 ```
 
-Veido:
+Vedio:
 <div align="center">
   <video src="https://github.com/user-attachments/assets/22440764-0d7e-438e-a44d-d0dad1006d3d" width="70%" poster="./assets/video_poster.png"> </video>
 </div>
-
-
 
 
 This repository contains two complementary sub-projects:
@@ -212,6 +210,7 @@ network:
     eval: 0
   type: Transolver_Irregular_Mesh
 ```
+
 
 
 
