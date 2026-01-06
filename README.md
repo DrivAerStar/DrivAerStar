@@ -1,28 +1,34 @@
 # DrivAerStar
 
-https://drivaerstar.github.io/
 
 Paper: 
 
+https://drivaerstar.github.io/
 https://neurips.cc/virtual/2025/loc/san-diego/poster/121752
 
-Cite:
-```
-
-```
-
-Veido:
-<div align="center">
-  <video src="https://player.vimeo.com/video/1088663908?h=740d29c195" width="70%"> </video>
-</div>
-
-
-
+Download:
 [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UXVXQV)
 
 [Hugging Face(Partial Data)](https://huggingface.co/datasets/drivaerstar/DrivAerStar-Review)
 
 [ModelScope(Uploading)](https://www.modelscope.cn/datasets/kenalin/DrivAerPlusPlus)
+
+Cite:
+```
+@article{qiu2025drivaerstar,
+  title={{DrivAerStar}: An Industrial-Grade {CFD} Dataset for Vehicle Aerodynamic Optimization},
+  author={Qiu, Jiyan and Lyulin Kuang and Guan Wang and Yichen Xu and Leiyao Cui and Shaotong Fu and Yixin Zhu and Rita Zhang},
+  booktitle={Conference on Neural Information Processing Systems},
+  year={2024}
+}
+```
+
+Veido:
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/22440764-0d7e-438e-a44d-d0dad1006d3d" width="70%" poster="./assets/video_poster.png"> </video>
+</div>
+
+
 
 
 This repository contains two complementary sub-projects:
@@ -205,6 +211,7 @@ network:
     eval: 0
   type: Transolver_Irregular_Mesh
 ```
+
 
 
 
