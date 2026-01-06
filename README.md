@@ -1,5 +1,7 @@
-# DrivAerStar
-
+[![demo](https://github.com/user-attachments/assets/0d2bed87-c3dd-4a8a-9f7f-c6514bd44852 "demo")](https://player.vimeo.com/video/1088663908?h=740d29c195)
+<div id="top" align="left">
+  
+# DrivAerStar: An Industrial-Grade CFD Dataset for Vehicle Aerodynamic Optimization
 
 Paper: 
 
@@ -24,10 +26,6 @@ Cite:
 }
 ```
 
-Vedio:
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/22440764-0d7e-438e-a44d-d0dad1006d3d" width="70%" poster="./assets/video_poster.png"> </video>
-</div>
 
 
 This repository contains two complementary sub-projects:
@@ -210,6 +208,7 @@ network:
     eval: 0
   type: Transolver_Irregular_Mesh
 ```
+
 
 
 
