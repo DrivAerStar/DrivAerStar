@@ -7,6 +7,7 @@ https://drivaerstar.github.io/
 https://neurips.cc/virtual/2025/loc/san-diego/poster/121752
 
 Download:
+
 [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UXVXQV)
 
 [Hugging Face(Partial Data)](https://huggingface.co/datasets/drivaerstar/DrivAerStar-Review)
@@ -211,6 +212,7 @@ network:
     eval: 0
   type: Transolver_Irregular_Mesh
 ```
+
 
 
 
