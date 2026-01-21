@@ -14,6 +14,8 @@ Directory Structure (Example)
 └── README.md
 ```
 
+Changelog: see [CHANGELOG.md](CHANGELOG.md)
+
 ---
 
 ## 1. General Environment Setup
@@ -45,11 +47,12 @@ Recommended Directory Structure:
 
 ```
 DrivAerStar_Maker/
-├── 1.code_make_stls_by_blender/    # Blender Scripts: Generate STLs
+├── 1.code_make_stls_by_blender/    # Blender Scripts: Generate STLs 
 ├── 2.code_Wheel_Alignment/         # Wheel Alignment & Geometry Adjustment
 ├── 3.make_java_code_E/             # Simulation Script Code Generation
 ├── 4.run/                          # Run/Simulation Script Execution
-└── 5.case_to_vtk/                  # Convert Simulation Case to VTK/Visualization Formats
+├── 5.case_to_vtk/                  # Convert Simulation Case to VTK/Visualization Formats
+└── 6.vtk_to_force_coefficient/     # Convert  VTK Case to  drag/lift/... force coefficient
 ```
 
 Example Execution:
@@ -87,7 +90,15 @@ python make.py
 ./run.sh
 ```
 
+6.Get Force coefficient
+
+```bash
+cd DrivAerStar_Maker/6.vtk_to_force_coefficient
+python force_coefficient.py --vtk "vtk_F/00002.vtk" --area-ref 2.37 --axis x --u 40 --rho 1.25
+```
+
 **Note**:
+
 - You may need to specify your own paths within each script.
 
 ---
@@ -180,4 +191,3 @@ network:
     eval: 0
   type: Transolver_Irregular_Mesh
 ```
-
