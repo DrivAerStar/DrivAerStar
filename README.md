@@ -3,18 +3,16 @@
   
 # DrivAerStar: An Industrial-Grade CFD Dataset for Vehicle Aerodynamic Optimization
 
-Paper: 
 
-https://drivaerstar.github.io/
-https://neurips.cc/virtual/2025/loc/san-diego/poster/121752
+Homepage: https://drivaerstar.github.io/
+
+Paper: https://neurips.cc/virtual/2025/loc/san-diego/poster/121752
 
 Download:
 
 [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UXVXQV)
 
 [Hugging Face(Partial Data)](https://huggingface.co/datasets/drivaerstar/DrivAerStar-Review)
-
-[ModelScope(Uploading)](https://www.modelscope.cn/datasets/kenalin/DrivAerPlusPlus)
 
 Cite:
 ```
@@ -219,3 +217,4 @@ network:
     eval: 0
   type: Transolver_Irregular_Mesh
 ```
+
