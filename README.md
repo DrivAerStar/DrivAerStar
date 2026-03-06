@@ -14,6 +14,8 @@ Download:
 
 [Hugging Face(Partial Data)](https://huggingface.co/datasets/drivaerstar/DrivAerStar-Review)
 
+[Model Checkpoints](https://github.com/DrivAerStar/DrivAerStar/blob/main/ckpts.zip)
+
 Cite:
 ```
 @article{qiu2025drivaerstar,
@@ -217,4 +219,5 @@ network:
     eval: 0
   type: Transolver_Irregular_Mesh
 ```
+
 
