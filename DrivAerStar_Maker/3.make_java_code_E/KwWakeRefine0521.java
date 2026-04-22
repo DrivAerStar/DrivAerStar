@@ -36,7 +36,7 @@ public class KwWakeRefine0521 extends StarMacro {
   public double floor = -285.1; // (mm)
   public double ARF = 2.0;
   public String back = "<<<back>>>";                               
-  public double airDensity = 1.25;
+  public double airDensity = 1.225;
   public double smallF = 1;
   public double car_length = 5 * smallF;
   
